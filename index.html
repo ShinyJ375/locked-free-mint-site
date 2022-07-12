@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <!--- Add your title below --->
+    <title>Locked Free Mint</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+            type="application/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!--- Add your URL and Logo below --->
+        <a href="https://yourURL.com">
+            <img id="logo" src="your-logo.png" alt="Your Logo" />
+        </a>
+        <h2>Locked Free Mint!</h2>
+        <button id="connect" class='cta-button connect-wallet-button'>
+            Connect Wallet
+        </button>
+        <!--- customize content to your heart's desire --->
+        <p>This web3 template is meant to be used with Smolrun's Locked Free Mint Smart Contract.</p>
+        <img id="square-300" src="free-nfts.png" alt="Free NFTs" />
+        <p>Why locked? These exclusive NFTs are meant to be collected, not flipped.</p>
+        <p>Here is how it works:</p>
+        <ol>
+            <li>Only one claim per wallet address.</li>
+            <li>Your free mint will be LOCKED, meaning it cannot be transferred until unlocked. (This means you can't sell.)</li>
+            <li>You can unlock your NFT below for 0.5 AVAX.</li>
+        </ol>
+        <div id="mint">
+            <h3>NFTs Minted</h3>
+            <p><span id="nftsMinted">0</span> / 999</p>
+            <p id="mintError"></p>
+            <button id="mintButton" class='cta-button connect-wallet-button'>
+                Mint
+            </button>
+            <p>Price: FREE</p>
+            <br/>
+        </div>
+            <h3>Your NFTs</h3>
+            <div id="nftWindow">
+                <p>Click to select</p>
+                <div id="display">
+                    <p>You don't have any NFTs!</p>
+                </div>
+                <div id="unlock">
+                    <label for="unlockInput">Token ID:</label>
+                    <!--- change max to match your max supply --->
+                    <input id="unlockInput" type="number" min="1" max="999" step="1"/><br/>
+                    <p id="unlockError"></p>
+                    <button id="unlockButton" class='cta-button connect-wallet-button'>
+                        Unlock NFT
+                    </button>
+                    <br/>
+                </div>
+            </div>
+        <br/>
+    </div>
+</body>
+</html>
