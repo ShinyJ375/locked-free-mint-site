@@ -130,7 +130,7 @@ const displayTokens = async () => {
             let tokenID = tokenIds[i];
 
             //use your api or ipfs info below to fetch the image
-            let img = `https://gateway.pinata.cloud/ipfs/QmUtZySZAZEgFQ5SuFTYtREWN2PMYgMAcfAFEfdncCx5Wm/${tokenID}.png`;
+            let img = `https://gateway.pinata.cloud/ipfs/QmeY3UUwi5diBv8bh6EYngZD7NJw5iBS3oCF7nEhc7973B/${tokenID}.png`;
             $("div#display").append(`<img src="${img}" id="nft${tokenID}" class="nft"/>`);
         }
     } else {
