@@ -1,6 +1,6 @@
 body {
     background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    color: black;
     font-size: medium;
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
@@ -69,8 +69,8 @@ body {
 }
 
 #logo {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     margin: auto;
 }
 
